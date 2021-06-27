@@ -4,6 +4,8 @@
 /*****
  * CSS VARIABLES 
  **/
+
+/* Define custom properties on the :root pseudo-class, so that it can be applied globally across HTML document */
 :root {
   --header-height: 3rem;
   --font-medium: 500;
@@ -51,3 +53,47 @@
 /*****
  * BASE
  **/
+
+/* Include the padding and border in an element's total width and height. */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Use the custom property value by specifying custom property name inside the var() function */
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
