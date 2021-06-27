@@ -112,3 +112,77 @@ img {
   margin: var(--mb-4) 0;
   text-align: center;
 }
+
+/******************************
+ * LAYOUT
+ ******************************/
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--first-color);
+}
+
+/******************************
+ * NAVBAR
+ ******************************/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.nav__item {
+  margin-bottom: var(--mb-4);
+}
+
+.nav__link {
+  position: relative;
+  color: var(--dark-color);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__logo {
+  color: var(--white-color);
+}
+
+.nav__toggle {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Show Menu */
+.show {
+  right: 0;
+}
