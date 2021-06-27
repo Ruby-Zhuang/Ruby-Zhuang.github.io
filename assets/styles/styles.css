@@ -1,9 +1,9 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
-/*****
- * CSS VARIABLES 
- **/
+/******************************
+ * CSS VARIABLES
+ ******************************/
 
 /* Define custom properties on the :root pseudo-class, so that it can be applied globally across HTML document */
 :root {
@@ -50,9 +50,9 @@
   --z-fixed: 100;
 }
 
-/*****
+/******************************
  * BASE
- **/
+ ******************************/
 
 /* Include the padding and border in an element's total width and height. */
 *,
@@ -96,4 +96,19 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/******************************
+ * CSS CLASSES
+ ******************************/
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--dark-color);
+  margin: var(--mb-4) 0;
+  text-align: center;
 }
