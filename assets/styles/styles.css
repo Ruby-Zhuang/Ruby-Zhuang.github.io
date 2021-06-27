@@ -1,4 +1,53 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
-/* CSS VARIABLES */
+/*****
+ * CSS VARIABLES 
+ **/
+:root {
+  --header-height: 3rem;
+  --font-medium: 500;
+}
+
+/* Colours */
+:root {
+  --first-color: #5361ff;
+  --white-color: #fafaff;
+  --dark-color: #2a3b47;
+  --text-color: #697477;
+}
+
+/* Font */
+:root {
+  --body-font: 'Montserrat', sans-serif;
+  --big-font-size: 6.25rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 10.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+/* Margins */
+:root {
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+}
+
+/* Z Index */
+:root {
+  --z-fixed: 100;
+}
+
+/*****
+ * BASE
+ **/
