@@ -32,11 +32,10 @@ navLinks.forEach((link) => link.addEventListener('click', linkAction));
  ******************************/
 const sections = document.querySelectorAll('section[id]');
 
-window.addEventListener('scroll', scrollActive);
-
 const scrollActive = () => {
   const scrollY = window.pageYOffset;
 
+  console.log('sections', sections);
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
@@ -55,3 +54,5 @@ const scrollActive = () => {
     }
   });
 };
+
+window.addEventListener('scroll', scrollActive);
