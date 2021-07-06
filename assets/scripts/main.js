@@ -35,13 +35,16 @@ const sections = document.querySelectorAll('section[id]');
 const scrollActive = () => {
   const scrollY = window.pageYOffset;
 
-  console.log('sections', sections);
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+  sections.forEach((section) => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 50;
     const sectionBottom = sectionTop + sectionHeight;
 
-    sectionId = current.getAttribute('id');
+    // console.log('scrollY', scrollY);
+    // console.log('sectionTop', sectionTop);
+    // console.log('sectionBottom', sectionBottom);
+
+    sectionId = section.getAttribute('id');
 
     if (scrollY > sectionTop && scrollY <= sectionBottom) {
       document
