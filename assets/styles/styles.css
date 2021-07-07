@@ -165,7 +165,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     transition: 0.5s;
     backdrop-filter: blur(10px);
   }
@@ -356,7 +356,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 0.5rem;
   cursor: pointer;
   backdrop-filter: blur(10px);
