@@ -1,7 +1,5 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-
-/******************************
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /******************************
  * CSS VARIABLES
  ******************************/
 
@@ -21,7 +19,7 @@
 
 /* Font */
 :root {
-  --body-font: 'Montserrat', sans-serif;
+  --body-font: 'Roboto', sans-serif;
   --big-font-size: 5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -408,7 +406,7 @@ img {
 
 .footer__title {
   font-size: var(--normal-font-size);
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 
 .footer__social {
