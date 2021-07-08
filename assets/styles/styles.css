@@ -12,9 +12,9 @@
 /* Colours */
 :root {
   --first-color: #922724;
-  --white-color: #fafaff;
-  --dark-color: #2a3b47;
-  --text-color: #697477;
+  --white-color: #f7eded;
+  --dark-color: #373737;
+  --text-color: #6d6d6d;
 }
 
 /* Font */
@@ -142,7 +142,8 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--first-color);
+  background-color: rgb(146, 39, 36, 0.6);
+  backdrop-filter: blur(2px);
 }
 
 /******************************
