@@ -444,3 +444,13 @@ img {
 .footer__social:hover {
   color: var(--first-color);
 }
+
+/******************************
+ * MEDIA QUERIES
+ ******************************/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .home__img {
+    width: 230px;
+  }
+}
