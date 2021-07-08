@@ -1,5 +1,7 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /******************************
+
+/******************************
  * CSS VARIABLES
  ******************************/
 
@@ -65,7 +67,7 @@ html {
 
 /* Use the custom property value by specifying custom property name inside the var() function */
 body {
-  margin: var(--header-height) 0 0 0;
+  margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -162,11 +164,11 @@ img {
     top: var(--header-height);
     right: -100%;
     width: 80%;
-    height: 100%;
+    height: calc(100vh - var(--header-height));
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.4);
     transition: 0.5s;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
   }
 }
 
@@ -219,7 +221,7 @@ img {
 }
 
 .home__container {
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
   row-gap: 5rem;
 }
 
