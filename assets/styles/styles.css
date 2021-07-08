@@ -530,12 +530,12 @@ img {
   }
 
   .about__img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   .about__img img {
-    width: 185px;
+    width: 280px;
   }
 
   /* Skills */
