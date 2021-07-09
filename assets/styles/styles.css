@@ -187,6 +187,16 @@ img {
 
 .nav__logo {
   color: var(--white-color);
+  display: flex;
+}
+
+.nav__logo img {
+  width: 35px;
+  height: auto;
+}
+
+.nav__logo h2 {
+  margin-left: var(--mb-2);
 }
 
 .nav__toggle {
