@@ -14,6 +14,8 @@
 /* Colours */
 :root {
   --first-color: #922724;
+  --second-color: #944b48;
+  --third-color: #debebd;
   --white-color: #f7eded;
   --dark-color: #373737;
   --text-color: #6d6d6d;
@@ -77,6 +79,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -188,6 +191,7 @@ img {
 .nav__logo {
   color: var(--white-color);
   display: flex;
+  align-items: center;
 }
 
 .nav__logo img {
@@ -195,7 +199,7 @@ img {
   height: auto;
 }
 
-.nav__logo h2 {
+.nav__name {
   margin-left: var(--mb-2);
 }
 
@@ -480,11 +484,15 @@ img {
   }
 
   .nav__link {
-    color: var(--white-color);
+    color: var(--third-color);
   }
 
   .nav__link:hover {
-    color: var(--dark-color);
+    color: var(--white-color);
+  }
+
+  .active {
+    color: var(--white-color);
   }
 
   .active::after {
