@@ -188,6 +188,10 @@ img {
   color: var(--first-color);
 }
 
+.nav__link .resume {
+  color: var(--white-color);
+}
+
 .nav__logo {
   color: var(--white-color);
   display: flex;
