@@ -416,6 +416,12 @@ img {
   row-gap: 2rem;
 }
 
+.contact__action {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
 .contact__subtitle {
   font-size: var(--normal-font-size);
   color: var(--first-color);
@@ -423,7 +429,24 @@ img {
 
 .contact__text {
   display: inline-block;
+}
+
+.contact__info {
+  display: flex;
+  align-items: center;
   margin-bottom: var(--mb-2);
+}
+
+.contact__social {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  width: 50px;
+  margin-right: var(--mb-3);
+}
+
+.contact__social:hover {
+  color: var(--first-color);
 }
 
 /******************************
@@ -568,14 +591,8 @@ img {
   /* Contact */
   .contact__container {
     /* grid-template-columns: repeat(2, 1fr); */
-    justify-items: center;
+    /* justify-items: center; */
     max-width: 37rem;
-  }
-
-  .contact__action {
-    font-size: var(--h2-font-size);
-    color: var(--first-color);
-    margin-bottom: var(--mb-1);
   }
 }
 
