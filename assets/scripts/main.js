@@ -90,5 +90,8 @@ sr.reveal('.skills__name', { distance: '20px', delay: 50, interval: 75 });
 sr.reveal('.project__img', { interval: 200 });
 
 // Scroll Contact
-sr.reveal('.contact__subtitle', {});
-sr.reveal('.contact__text', { interval: 200 });
+sr.reveal('.contact__action', { delay: 300 });
+sr.reveal('.contact__action-text', { delay: 300 });
+sr.reveal('.contact__social', { interval: 200 });
+sr.reveal('.contact__subtitle', { interval: 200 });
+sr.reveal('.contact__text', { delay: 50, interval: 200 });
