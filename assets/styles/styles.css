@@ -335,6 +335,7 @@ img {
  ******************************/
 .skills__container {
   row-gap: 2rem;
+  justify-items: center;
 }
 
 .skills__subtitle {
@@ -355,6 +356,11 @@ img {
 .skills__name:hover {
   background-color: var(--first-color);
   color: var(--white-color);
+}
+
+.skills__img img {
+  border-radius: 0.5rem;
+  width: 250px;
 }
 
 /******************************
