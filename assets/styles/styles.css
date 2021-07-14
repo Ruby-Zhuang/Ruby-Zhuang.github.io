@@ -567,8 +567,15 @@ img {
 
   /* Contact */
   .contact__container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     justify-items: center;
+    max-width: 37rem;
+  }
+
+  .contact__action {
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
   }
 }
 
