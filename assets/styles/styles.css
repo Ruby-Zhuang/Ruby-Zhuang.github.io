@@ -189,7 +189,14 @@ img {
 }
 
 .nav__link .resume {
-  color: var(--white-color);
+  border: 1px solid;
+  display: inline-block;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+
+.nav__link .resume:hover {
+  background-color: rgb(146, 39, 36, 0.3);
 }
 
 .nav__logo {
@@ -476,6 +483,7 @@ img {
 
   .nav__list {
     display: flex;
+    align-items: center;
   }
 
   .nav__item {
@@ -493,6 +501,15 @@ img {
 
   .nav__link:hover {
     color: var(--white-color);
+  }
+
+  .nav__link .resume {
+    color: var(--white-color);
+  }
+
+  .nav__link .resume:hover {
+    background-color: var(--white-color);
+    color: var(--first-color);
   }
 
   .active {
